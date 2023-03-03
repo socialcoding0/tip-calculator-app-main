@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>SPLITTER</h1>
+    <div id="calculator">
+      <div id="operations">
+        <div id="bill">
+          <span>Bill</span>
+          <div class="input-content" id="forBill">
+            <img src="./images/icon-dollar.svg" alt="dolar">
+            <input type="number" class="click-element input" id="bill-input">
+          </div>
+        </div>
+        <div id="tip">
+          <span>Select Tip %</span>
+          <div id="btns">
+            <button class="click-element btn">5%</button>
+            <button class="click-element btn">10%</button>
+            <button class="click-element btn">15%</button>
+            <button class="click-element btn">25%</button>
+            <button class="click-element btn">50%</button>
+            <input type="number" placeholder="Custom" class="click-element btn input" id="custom-tip">
+          </div>
+        </div>
+        <div id="number-people">
+          <span>Number of People</span>
+          <div class="input-content" id="forPeople">
+            <img src="./images/icon-person.svg" alt="person">
+            <input type="number" class="click-element input" id="people">
+          </div>
+        </div>
+      </div>
+
+      <div id="results">
+        <div id="amount" class="result-content">
+          <div id="amount-title" class="title">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <p id="amount-result" class="result">-</p>
+        </div>
+        <div id="total" class="result-content">
+          <div id="total-title" class="title">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <p id="total-result" class="result">-</p>
+        </div>
+        <button id="reset" class="click-element reset-btn">RESET</button>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>

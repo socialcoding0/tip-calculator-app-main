@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+input,
+button,
+body {
+  font-family: "Space Mono", monospace; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+body {
+  font-size: 24px;
+  min-height: 100vh;
+  background-color: #c5e4e7;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  body main {
+    width: 44%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 680px;
+    gap: 3rem; }
+    body main h1 {
+      width: 80px;
+      text-align: center;
+      font-size: 1.5rem;
+      word-wrap: break-word;
+      letter-spacing: 5px;
+      color: #00494d; }
+    body main #calculator {
+      background-color: white;
+      display: flex;
+      border-radius: 15px;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      gap: 2rem;
+      width: 100%; }
+      body main #calculator #operations {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 0.7rem 0rem; }
+        body main #calculator #operations #bill span,
+        body main #calculator #operations #tip span,
+        body main #calculator #operations #number-people span {
+          font-size: 0.8rem;
+          color: #00494d;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.2rem; }
+        body main #calculator #operations #bill .input-content,
+        body main #calculator #operations #number-people .input-content {
+          background-color: #c5e4e7;
+          display: flex;
+          align-items: center;
+          padding-left: 0.8rem;
+          border-radius: 5px;
+          gap: 1rem; }
+          body main #calculator #operations #bill .input-content img,
+          body main #calculator #operations #number-people .input-content img {
+            width: 10px;
+            height: 15px; }
+          body main #calculator #operations #bill .input-content input,
+          body main #calculator #operations #number-people .input-content input {
+            width: 100%;
+            line-height: 2.2rem;
+            text-align: right;
+            padding-right: 0.9rem;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: #00494d;
+            font-weight: 700;
+            font-size: 1rem; }
+        body main #calculator #operations #tip {
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem; }
+          body main #calculator #operations #tip #btns {
+            display: flex;
+            gap: 0.9rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly; }
+            body main #calculator #operations #tip #btns input.click-element {
+              outline: none;
+              border: none;
+              background-color: #c5e4e7;
+              border-radius: 5px;
+              width: 30%;
+              padding: 0.4rem 1.1rem;
+              color: #00494d;
+              font-size: 0.9rem;
+              text-align: center; }
+              body main #calculator #operations #tip #btns input.click-element::placeholder {
+                color: #00494d; }
+            body main #calculator #operations #tip #btns .click-element {
+              background-color: #00494d;
+              color: white;
+              width: 30%;
+              padding: 0.3rem 0rem;
+              cursor: pointer;
+              border: none;
+              outline: none;
+              font-weight: 700;
+              border-radius: 5px;
+              font-size: 1rem; }
+            body main #calculator #operations #tip #btns .active {
+              background-color: #26c0ab !important;
+              color: #00494d !important; }
+      body main #calculator #results {
+        background-color: #00494d;
+        border-radius: 15px;
+        width: 50%;
+        padding: 2rem 1.5rem;
+        display: flex;
+        gap: 1.2rem;
+        flex-direction: column; }
+        body main #calculator #results .result-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          body main #calculator #results .result-content .title {
+            font-size: 0.7rem; }
+            body main #calculator #results .result-content .title p {
+              color: white; }
+            body main #calculator #results .result-content .title span {
+              color: #7f9c9f; }
+          body main #calculator #results .result-content .result {
+            color: #26c0ab;
+            font-size: 2rem;
+            width: 70%;
+            word-wrap: break-word;
+            text-align: right; }
+        body main #calculator #results #reset {
+          background-color: #26c0ab;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          color: #00494d;
+          width: 100%;
+          line-height: 2rem;
+          font-weight: 700;
+          margin-top: auto;
+          cursor: pointer; }
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 12px; }
+    html body main {
+      width: 45%;
+      min-width: 300px; }
+      html body main #calculator {
+        flex-direction: column; }
+        html body main #calculator #operations,
+        html body main #calculator #results {
+          width: 100%; } }
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 12px; } }
