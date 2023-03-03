@@ -28,6 +28,8 @@ body {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+  -moz-apperance: none;
+  -o-appearance: none;
   margin: 0;
 }
 
@@ -96,17 +98,21 @@ body {
             width: 10px;
             height: 15px;
           }
-          input {
+
+          label {
             width: 100%;
-            line-height: 2.2rem;
-            text-align: right;
-            padding-right: 0.9rem;
-            outline: none;
-            border: none;
-            background-color: transparent;
-            color: $Very-dark-cyan;
-            font-weight: 700;
-            font-size: 1rem;
+            input {
+              width: 100%;
+              line-height: 2.2rem;
+              text-align: right;
+              padding-right: 0.9rem;
+              outline: none;
+              border: none;
+              background-color: transparent;
+              color: $Very-dark-cyan;
+              font-weight: 700;
+              font-size: 1rem;
+            }
           }
         }
 

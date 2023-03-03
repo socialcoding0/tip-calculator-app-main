@@ -12,6 +12,8 @@ body {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+  -moz-apperance: none;
+  -o-appearance: none;
   margin: 0; }
 
 body {
@@ -71,18 +73,21 @@ body {
           body main #calculator #operations #number-people .input-content img {
             width: 10px;
             height: 15px; }
-          body main #calculator #operations #bill .input-content input,
-          body main #calculator #operations #number-people .input-content input {
-            width: 100%;
-            line-height: 2.2rem;
-            text-align: right;
-            padding-right: 0.9rem;
-            outline: none;
-            border: none;
-            background-color: transparent;
-            color: #00494d;
-            font-weight: 700;
-            font-size: 1rem; }
+          body main #calculator #operations #bill .input-content label,
+          body main #calculator #operations #number-people .input-content label {
+            width: 100%; }
+            body main #calculator #operations #bill .input-content label input,
+            body main #calculator #operations #number-people .input-content label input {
+              width: 100%;
+              line-height: 2.2rem;
+              text-align: right;
+              padding-right: 0.9rem;
+              outline: none;
+              border: none;
+              background-color: transparent;
+              color: #00494d;
+              font-weight: 700;
+              font-size: 1rem; }
         body main #calculator #operations #tip {
           display: flex;
           flex-direction: column;
