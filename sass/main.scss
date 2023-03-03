@@ -33,6 +33,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+input::placeholder {
+  color: $Very-dark-cyan;
+}
+
 body {
   font-size: 24px;
   min-height: 100vh;
@@ -141,9 +145,6 @@ body {
               color: $Very-dark-cyan;
               font-size: 0.9rem;
               text-align: center;
-              &::placeholder {
-                color: $Very-dark-cyan;
-              }
             }
 
             .click-element {

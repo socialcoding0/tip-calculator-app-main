@@ -21,6 +21,7 @@ billInput.addEventListener("input", function (e) {
     inputLengthControl(e.target, 12);
     billValue = parseInt(e.target.value);
     operations(billValue, tipValue, peopleValue);
+
 });
 
 customTip.addEventListener("input", function (e) {
@@ -36,6 +37,7 @@ people.addEventListener("input", function (e) {
 });
 
 
+
 resetBtn.addEventListener("click", function () {
     billInput.value = "";
     customTip.value = "";
@@ -47,7 +49,11 @@ resetBtn.addEventListener("click", function () {
     tipValue = "";
     peopleValue = "";
 
-    document.querySelector(".click-element.btn.active").classList.remove("active");
+    let current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+        document.querySelector(".click-element.btn.active").classList.remove("active");
+    }
+
 });
 
 
@@ -115,3 +121,7 @@ function inputLengthControl(target, value) {
         target.value = target.value.slice(0, value);
     }
 }
+
+
+
+

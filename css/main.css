@@ -16,6 +16,9 @@ input[type="number"]::-webkit-outer-spin-button {
   -o-appearance: none;
   margin: 0; }
 
+input::placeholder {
+  color: #00494d; }
+
 body {
   font-size: 24px;
   min-height: 100vh;
@@ -108,8 +111,6 @@ body {
               color: #00494d;
               font-size: 0.9rem;
               text-align: center; }
-              body main #calculator #operations #tip #btns input.click-element::placeholder {
-                color: #00494d; }
             body main #calculator #operations #tip #btns .click-element {
               background-color: #00494d;
               color: white;
